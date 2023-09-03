@@ -1,0 +1,45 @@
+/* *** =Миксины, функции *** */
+
+@use 'sass:math';
+
+@function rem($px) {
+    @return math.div($px, 16px) * 1rem;
+}
+
+@mixin text($size, $weight, $color: null, $line-height: null) {
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
+	line-height: $line-height;
+}
+
+// Cоздание примесей медиазапросов
+@mixin mq-large {
+    @media screen and (max-width: $screen-large) {
+        @content;
+    }
+}
+
+@mixin mq-medium {
+    @media screen and (max-width: $screen-medium) {
+        @content;
+    }
+}
+
+@mixin mq-small {
+    @media screen and (max-width: $screen-small) {
+        @content;
+    }
+}
+
+@mixin mq-extra-small {
+    @media screen and (max-width: $screen-extra-small) {
+        @content;
+    }
+}
+
+@mixin pixel-ratio-2x {
+    @media screen and (min-resolution >= 1.5dppx) {
+        @content;
+    }
+}

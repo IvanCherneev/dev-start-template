@@ -1,0 +1,29 @@
+/* ***
+Таблица стилей для проекта: Имя_проекта
+Автор: Чернеев Иван Петрович
+Версия: 1.0
+Связаться по эл. почте: cherneev91@mail.ru
+*** */
+
+// Подключение библиотек
+@import "normalize.css/normalize";
+
+// Подключение специальных файлов
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/animations";
+
+// Подключение базовых файлов
+@import "base/adjustment";
+@import "base/font";
+
+// Подключение файлов шаблонов страницы
+@import "layouts/main";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/sidebar";
+
+// Подключение файлов с компонентами страницы
+@import "components/buttons";
+@import "components/dropdown";
+@import "components/navigation";

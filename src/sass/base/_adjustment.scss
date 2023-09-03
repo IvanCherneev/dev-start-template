@@ -1,0 +1,83 @@
+/* *** =Основные настройки *** */
+
+// Изменение блочной модели
+:root {
+	box-sizing: border-box;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+
+	&::after,
+	&::before {
+		box-sizing: inherit;
+	}
+}
+
+// настройки страницы
+.page {
+	height: 100%;
+	font-size: $basic-font-size;
+	font-size: var(--basic-font-size);
+	font-family: $basic-font-family;
+	font-family: var(--basic-font-family);
+	line-height: $basic-line-height;
+	line-height: var(--basic-line-height);
+	font-weight: $basic-font-weight;
+	font-weight: var(--basic-font-weight);
+	-webkit-font-smoothing: antialiased; // сглаживание шрифтов
+}
+
+.page__body {
+	min-height: 100%;
+	color: $basic-color;
+	color: var(--basic-color);
+	background-color: $basic-bg-color;
+	background-color: var(--basic-bg-color);
+}
+
+// Настройки доп. элементов и контейнеров
+.container {
+	margin: 0 auto;
+	max-width: $container-max-width; // + 20px;
+	max-width: var(--container-max-width); // + 20px;
+	min-width: $container-min-width;
+	min-width: var(--container-min-width);
+	padding: 0 15px;
+	position: relative;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.overlay {
+    z-index: 10;
+    position: fixed;
+    overflow-y: hidden;
+    background-color: rgb(0 0 0 / 40%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}

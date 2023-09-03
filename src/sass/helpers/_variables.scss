@@ -1,0 +1,88 @@
+/* *** =Переменные *** */
+
+:root {
+	// Базовые переменные страницы
+	--container-max-width: 1100px;
+	--container-min-width: 320px;
+	--basic-bg-color: #ffffff;
+	--basic-color: #000000;
+	--basic-font-family: "Poppins", sans-serif;
+	--basic-font-size: 18px;
+	--basic-font-weight: 400;
+	--basic-line-height: 1.2;
+	--basic-position: 0;
+
+	// Дополнительные переменные страницы
+	--secondary-font-family: #3e61af;
+	--secondary-bg-color: #3e61af;
+	--secondary-color: #3e61af;
+
+	// font-family
+	--header-font-family: $basic-font-family;
+	--body-font-family: $basic-font-family;
+	--paragraph-font-family: $basic-font-family;
+	--heading-font-family: $basic-font-family;
+	--subheading-font-family: $basic-font-family;
+	--title-font-family: $basic-font-family;
+	--caption-font-family: $basic-font-family;
+	--code-font-family: $basic-font-family;
+	--quote-font-family: $basic-font-family;
+	--button-font-family: $basic-font-family;
+
+	// color
+	--accent-color: $basic-color;
+	--text-color: $basic-color;
+	--link-color: $basic-color;
+	--hover-color: $basic-color;
+	--active-color: $basic-color;
+	--error-color: $basic-color;
+	--success-color: $basic-color;
+
+	// position
+	--popup-position: 1
+}
+
+// Базовые переменные страницы
+$container-max-width: 1100px;
+$container-min-width: 320px;
+$basic-bg-color: #ffffff;
+$basic-color: #000000;
+$basic-font-family: "Poppins", sans-serif;
+$basic-font-size: 18px;
+$basic-font-weight: 400;
+$basic-line-height: 1.2;
+
+// Дополнительные переменные страницы
+$secondary-font-family: #3e61af;
+$secondary-bg-color: #3e61af;
+$secondary-color: #3e61af;
+
+// font-family
+$header-font-family: $basic-font-family;
+$body-font-family: $basic-font-family;
+$paragraph-font-family: $basic-font-family;
+$heading-font-family: $basic-font-family;
+$subheading-font-family: $basic-font-family;
+$title-font-family: $basic-font-family;
+$caption-font-family: $basic-font-family;
+$code-font-family: $basic-font-family;
+$quote-font-family: $basic-font-family;
+$button-font-family: $basic-font-family;
+
+// color
+$accent-color: $basic-color;
+$text-color: $basic-color;
+$link-color: $basic-color;
+$hover-color: $basic-color;
+$active-color: $basic-color;
+$error-color: $basic-color;
+$success-color: $basic-color;
+
+// position
+$popup-position: 1;
+
+// Точки останова
+$screen-large: 1200px;
+$screen-medium: 992px;
+$screen-small: 768px;
+$screen-extra-small: 480px;
